@@ -3,7 +3,8 @@ Description
 
 JDBCRowLoader is an implementation of an SQLFire RowLoader, which is used to lazily load rows into VMware vFabric SQLFire
 from an archival database. For more information on SQLFire and RowLoader, see 
-http://www.vmware.com/products/datacenter-virtualization/vfabric-sqlfire/overview.html.
+http://www.vmware.com/products/datacenter-virtualization/vfabric-sqlfire/overview.html. Additional documentation is in the 
+JavaDoc header of the JDBCRowLoader.java file.
 
 This implementation is based on the JDBCRowLoader example in the SQLFire documentation. It works with the "SQLFire10Beta" version of
 SQLFire.
