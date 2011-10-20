@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.vmware.sqlfire.loader</groupId>
-	<artifactId>rowloader</artifactId>
+	<artifactId>jdbc-rowloader</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
