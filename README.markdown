@@ -10,10 +10,10 @@ the "SQLFire10Beta" version of SQLFire.
 
 JDBCRowLoader has the following features:
 
-   * It can be used for any JDBC data source (provided the driver is available in the classpath of the server).
-   * It can be used for any table, although a separate instance of the RowLoader is created for each table.
-   * It will pool JDBC Connections and PreparedStatements, with a configurable minimum and maximum number of connections.
-   * It uses the Connection.isReadOnly(true) setting to request the driver to optimize the transaction settings for reads.
+ * It can be used for any JDBC data source (provided the driver is available in the classpath of the server).
+ * It can be used for any table, although a separate instance of the RowLoader is created for each table.
+ * It will pool JDBC Connections and PreparedStatements, with a configurable minimum and maximum number of connections.
+ * It uses the Connection.isReadOnly(true) setting to request the driver to optimize the transaction settings for reads.
 
 Building
 ========
@@ -59,12 +59,12 @@ with a delimiter character.
 
 Accepted parameters are:
 
-    * url (required) - the JDBC URL of the archival database to connect to
-    * query-string (see note) - a SELECT statement
-    * query-columns (see note) - a comma-delimited list of column names
-    * min-connections (optional, default is 1) - the minimum number of connections to maintain in the connection pool
-    * max-connections (optional, default is 1) - the maximum number of connections to maintain in the connection pool
-    * connection-timeout (optional, default is 3000) - the maximum amount of time to wait, in milliseconds, for a connection
+ * url (required) - the JDBC URL of the archival database to connect to
+ * query-string (see note) - a SELECT statement
+ * query-columns (see note) - a comma-delimited list of column names
+ * min-connections (optional, default is 1) - the minimum number of connections to maintain in the connection pool
+ * max-connections (optional, default is 1) - the maximum number of connections to maintain in the connection pool
+ * connection-timeout (optional, default is 3000) - the maximum amount of time to wait, in milliseconds, for a connection
         to become available in the connection pool
       
 Note: Either the query-string or query-columns parameter is required. If the query-string parameter is provided, the 
