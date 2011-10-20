@@ -80,3 +80,14 @@ If the column layout of the archive table does not match the column layout of th
 and order the column names in the query-string SELECT statement or the query-columns list so that the result set will match the 
 layout of the SQLFire table.
 
+Examples:
+
+    -- add a RowLoader to the Countries table, which has a primary key named "code", specifying the full SELECT statement
+    -- the "user" and "password" parameters are passed to the database when a connection is created
+    call SYS.ATTACH_LOADER('Ref','Countries','com.vmware.sqlfire.loader.JDBCRowLoader',
+        '|url=jdbc:db://host:port/ref|user=admin|password=secret|query-string=SELECT * FROM Ref.Countries WHERE code=?');
+
+    -- specify the column names instead of the full SELECT statement
+    call SYS.ATTACH_LOADER('Ref','Countries','com.vmware.sqlfire.loader.JDBCRowLoader', 
+        '|url=jdbc:db://host:port/ref|user=admin|password=secret|query-columns=code');
+
